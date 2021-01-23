@@ -1,0 +1,44 @@
+.LoanAndBonusApplication__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loanandbonusapplication {
+  border: 1px solid gray;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 80%;
+}
+.loanandbonusapplication > h1 {
+  font-weight: 300;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+.loanandbonusapplication > form {
+  display: flex;
+  flex-direction: column;
+}
+.loanandbonusapplication > form > textarea {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+.loanandbonusapplication > form > textarea:focus {
+  outline: none;
+}
+.loanandbonusapplication > form > Button {
+  width: 150px !important;
+  margin-top: 8px;
+}
+.previous__requests {
+  margin-top: 10rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}

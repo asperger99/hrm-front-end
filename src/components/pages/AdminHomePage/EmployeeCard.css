@@ -1,0 +1,106 @@
+.employee {
+  width: 70%;
+  border: 1px solid lightgray;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.employee:hover {
+  border: 1px solid rgb(44, 128, 255);
+
+  background-color: rgb(248, 250, 255);
+}
+.employeecard__container {
+  display: flex;
+}
+.employeecard__container__avatar {
+  border-right: 1px solid lightgray;
+}
+.employeecard__container__avatar > img {
+  height: 180px;
+  object-fit: contain;
+  padding-right: 16px;
+  border-radius: 10px;
+}
+.employeecard__container__details {
+  display: flex;
+  width: 100%;
+  padding-top: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 16px;
+}
+.employeecard__container__details > h1,
+.employeecard__container__moredetails > h1 {
+  font-size: 1rem;
+  color: gray;
+  font-weight: 200;
+}
+.employeecard__container__details > h1 > span,
+.employeecard__container__moredetails > h1 > span {
+  font-size: 1.2rem;
+  color: black;
+}
+.employeecard__container__moredetails {
+  display: none;
+  width: 100%;
+}
+.create__delete__icon {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.employee__delete__icon {
+  color: rgb(248, 52, 52);
+}
+.employee__create__icon {
+  color: rgb(95, 95, 255);
+}
+
+.update {
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  max-height: 80vh;
+  overflow-y: scroll;
+  padding: 8px 16px;
+}
+
+.update > h1 {
+  font-size: 1rem;
+}
+.update > h1 > span {
+  color: gray;
+  font-weight: 300;
+}
+.update > h1 > input {
+  border: none;
+  background-color: rgb(255, 247, 247);
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+}
+.update > h1 > input:focus {
+  outline: none;
+  border-bottom: 2px solid gray;
+}
+.update__button {
+  width: 100%;
+  margin-top: 8px !important;
+}
+
+@media (max-width: 1000px) {
+  .employee {
+    width: 98%;
+  }
+  .employeecard__container {
+    flex-wrap: wrap;
+  }
+  .employeecard__container__avatar {
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid lightgray;
+  }
+}

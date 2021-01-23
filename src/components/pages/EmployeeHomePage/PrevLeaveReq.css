@@ -1,0 +1,23 @@
+.prev__leaverequest {
+  display: flex;
+  flex-direction: column;
+  min-width: 90%;
+  padding: 8px 16px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.prev__leaverequest__action,
+.prev__leaverequest__reason,
+.prev__leaverequest__date {
+  margin-top: 8px;
+  color: gray;
+}
+.prev__leaverequest__action {
+  display: flex;
+  justify-content: flex-end;
+}
+.prev__leaverequest__date {
+  display: flex;
+  justify-content: space-between;
+}

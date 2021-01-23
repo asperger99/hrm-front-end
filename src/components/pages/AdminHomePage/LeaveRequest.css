@@ -1,0 +1,52 @@
+.leaverequest {
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  color: gray;
+  font-weight: 30;
+}
+.leaverequest__employee,
+.leaverequest__reason,
+.leaverequest__action {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+.leaverequest__reason {
+  min-height: 100px;
+  max-height: 200px;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  align-items: flex-start;
+}
+.leaverequest__action {
+  justify-content: flex-end;
+  border: none;
+}
+.leaverequest__action > Button {
+  margin-left: 8px;
+}
+.leaverequest:hover {
+  background-color: rgb(245, 245, 255);
+  border: 1px solid blue;
+}
+@media (max-width: 1000px) {
+  .leaverequest {
+    max-width: none;
+  }
+}

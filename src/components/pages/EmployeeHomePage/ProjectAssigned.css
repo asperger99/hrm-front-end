@@ -1,0 +1,34 @@
+.project {
+  width: 80%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 150px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.project__image {
+  border-right: 1px solid gray;
+}
+.project__image > img {
+  width: 100px;
+  object-fit: contain;
+
+  margin-right: 20px;
+}
+.project__info,
+.project__team {
+  height: 100px;
+  margin-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-right: 1px solid gray;
+}
+.project__team {
+  border-right: none;
+}

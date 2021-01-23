@@ -1,0 +1,45 @@
+.leaveapplication {
+  border: 1px solid lightgray;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 80%;
+  transition: 0.3s ease-out;
+}
+.leaveapplication:hover {
+  border-color: blue;
+}
+.leaveapplication > h1 {
+  font-weight: 300;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+}
+.leaveapplication > form {
+  display: flex;
+  flex-direction: column;
+}
+.leaveapplication > form > input {
+  max-width: 300px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.leaveapplication > form > textarea {
+  border-color: lightgray;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+.leaveapplication > form > textarea:focus {
+  outline: none;
+}
+.leaveapplication > form > Button {
+  width: 150px !important;
+  margin-top: 8px;
+}
+.prevReq {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 0;
+}

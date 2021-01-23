@@ -1,0 +1,117 @@
+.landingpage__container {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.landingpage__container__image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  /* background-image: url(https://images.pexels.com/photos/23547/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500); */
+  background: linear-gradient(
+    to right,
+    rgba(65, 0, 255, 0.4),
+    rgba(255, 0, 232, 0.3)
+  );
+}
+
+.landingpage__container__image > img {
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+  top: 0%;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.landingpage__container__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+}
+.landingpage__container__content > Button {
+  margin: 8px 8px;
+  background: linear-gradient(
+    to right,
+    rgba(65, 0, 255, 0.4),
+    rgba(255, 0, 232, 0.3)
+  );
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  margin: auto;
+}
+.signin__container {
+  width: 300px;
+  padding: 8px 16px;
+
+  background-color: white !important;
+  /* border: 1px solid red; */
+}
+.signin__container__elements {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signin__container__elements > button,
+input,
+.signup__container > Button,
+.signup__container > Button {
+  width: 90%;
+  padding: 8px;
+  margin: 8px;
+}
+.signup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 8px 16px;
+  margin: 8px 16px;
+}
+.signup__container__personaldetails {
+  background-color: white;
+  height: 70vh;
+  overflow-y: scroll;
+}
+.signup__container__personaldetails > input {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.signup__container__personaldetails__button {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 0 !important;
+}
+.signup__container__personaldetails > input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+.signin__container__elements > input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.signin__container__elements > input:focus {
+  outline: none;
+}

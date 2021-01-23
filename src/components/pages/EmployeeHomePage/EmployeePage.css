@@ -1,0 +1,13 @@
+.employeepage__container {
+  display: flex;
+  min-width: 100%;
+}
+
+.employeepage__container__right__feed {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}

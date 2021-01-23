@@ -1,0 +1,18 @@
+.prev__loanrequest {
+  display: flex;
+  flex-direction: column;
+  min-width: 90%;
+  padding: 8px 16px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.prev__loanrequest__action,
+.prev__loanrequest__reason,
+.prev__loanrequest__date {
+  margin-top: 8px;
+}
+.prev__loanrequest__action {
+  display: flex;
+  justify-content: flex-end;
+}

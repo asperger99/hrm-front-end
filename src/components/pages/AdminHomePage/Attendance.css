@@ -1,0 +1,38 @@
+.attandance__container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+.attendance__daterange__button {
+  width: 100% !important;
+  text-transform: inherit !important;
+}
+.attandance__container__form {
+  display: flex;
+  flex-direction: column;
+}
+.attandance__container > input {
+  text-align: center;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  color: blue;
+}
+.attandance__container > input:focus {
+  outline-width: 0;
+}
+.daterange__container {
+  /* position: absolute; */
+  /* top: 35px;
+  left: 25%; */
+  max-width: 70vw;
+  border: 1px solid lightgray;
+  margin-top: 8px;
+  overflow-x: scroll;
+}
