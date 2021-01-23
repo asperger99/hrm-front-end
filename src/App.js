@@ -21,15 +21,15 @@ function App() {
     //     });
     //   })
     //   .catch((e) => console.log(e.message));
-    const loggedInUser = localStorage.getItem("user"); ////////added 2
-    if (loggedInUser) {
-      const foundUser = JSON.parse(loggedInUser);
-      console.log("lgu----->>>", loggedInUser);
-      dispatch({
-        type: "UPDATE_USER",
-        item: foundUser,
-      });
-    }
+    // const loggedInUser = localStorage.getItem("user"); ////////added 2
+    // if (loggedInUser) {
+    //   const foundUser = JSON.parse(loggedInUser);
+    //   console.log("lgu----->>>", loggedInUser);
+    //   dispatch({
+    //     type: "UPDATE_USER",
+    //     item: foundUser,
+    //   });
+    // }
   }, []);
 
   return (
