@@ -338,20 +338,29 @@ function LandingPage() {
               alt=""
             />
             <div className="landingpage__container__content">
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={() => setSignInOpen(true)}
-              >
-                Sign In
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={() => setSignUpOpen(true)}
-              >
-                Sign Up
-              </Button>
+              <div className="welcome">
+                <h3>Welcome!</h3>
+              </div>
+              <div className="landingpage__container__content__button">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => setSignInOpen(true)}
+                >
+                  Sign In
+                </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => setSignUpOpen(true)}
+                >
+                  Sign Up
+                </Button>
+              </div>
+              <div className="instruction">
+                <p>Sign In to proceed...</p>
+                <p>New User ? Sign Up first. </p>
+              </div>
             </div>
           </div>
         </div>
