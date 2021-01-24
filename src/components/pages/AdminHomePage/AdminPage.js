@@ -509,7 +509,7 @@ function AdminPage(props) {
         </div>
       </div>
       <Divider />
-      <List onClick={() => handleDrawerToggle()}>
+      <List onClick={() => setMobileOpen(!mobileOpen)}>
         <ListItem
           button
           key="Employees"
