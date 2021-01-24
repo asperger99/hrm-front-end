@@ -129,7 +129,7 @@ function EmployeePage(props) {
         </div>
       </div>
       <Divider />
-      <List>
+      <List onClick={() => handleDrawerToggle()}>
         <ListItem
           button
           key="Attendance"

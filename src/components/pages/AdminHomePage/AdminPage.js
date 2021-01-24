@@ -509,7 +509,7 @@ function AdminPage(props) {
         </div>
       </div>
       <Divider />
-      <List>
+      <List onClick={() => handleDrawerToggle()}>
         <ListItem
           button
           key="Employees"
