@@ -36,10 +36,10 @@ function Attendance() {
     Axios({
       method: "POST",
       withCredentials: true,
-      params: { id: user?._id },
+      data: { username: user?.username },
       url: "https://shrouded-badlands-75056.herokuapp.com/employees/query",
     })
-      .then((res) => setTempUser(res.data))
+      .then((res) => setTempUser(res.data[0]))
       .catch((e) => alert(e.message));
   }, []);
 
@@ -94,7 +94,7 @@ function Attendance() {
     const d1 = new Date(date);
     const d2 = new Date();
     let repeat = false;
-    tempUser.presentOn.every((d) => {
+    tempUser?.presentOn.every((d) => {
       const t = new Date(d);
       if (
         t.getDate() == d2.getDate() &&
