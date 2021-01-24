@@ -69,7 +69,13 @@ function LandingPage() {
         if (res.data === "No User Exists") {
           return alert(res.data);
         }
-        //localStorage.setItem("user", JSON.stringify(res.data)); //////////////////added 1
+        localStorage.setItem(
+          "user",
+          JSON.stringify({
+            username: res.data.username,
+            isAdmin: res.data.isAdmin,
+          })
+        ); //////////////////added 1
         dispatch({
           type: "UPDATE_USER",
           item: res.data,
