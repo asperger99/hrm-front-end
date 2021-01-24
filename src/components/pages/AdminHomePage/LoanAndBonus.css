@@ -1,9 +1,9 @@
 .loanrequest {
   display: flex;
   flex-direction: column;
-  min-width: 600px;
   border: 1px solid gray;
   border-radius: 10px;
+  min-width: 90%;
   align-items: center;
   justify-content: space-around;
   padding: 10px;

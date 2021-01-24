@@ -70,7 +70,6 @@
   padding: 8px 16px;
 
   background-color: white !important;
-  /* border: 1px solid red; */
 }
 .signin__container__elements {
   height: 100%;
@@ -143,4 +142,12 @@ input,
 .instruction > p {
   color: rgb(255, 255, 255);
   font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .signup__container,
+  .signin__container {
+    min-width: 80%;
+    max-width: 80%;
+  }
 }
