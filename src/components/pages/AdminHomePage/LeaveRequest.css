@@ -1,7 +1,7 @@
 .leaverequest {
   display: flex;
   flex-direction: column;
-  min-width: 90%;
+  min-width: 600px;
   border: 1px solid gray;
   border-radius: 10px;
   align-items: center;

@@ -12,7 +12,7 @@ import Axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "80%",
+    width: "100%",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
