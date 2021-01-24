@@ -143,3 +143,11 @@ input,
   color: rgb(255, 255, 255);
   font-weight: 400;
 }
+
+@media (max-width: 1000px) {
+  .signup__container,
+  .signin__container {
+    min-width: 80%;
+    max-width: 80%;
+  }
+}
