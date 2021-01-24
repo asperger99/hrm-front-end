@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Attendance.css";
 import "date-fns";
 import Grid from "@material-ui/core/Grid";
@@ -30,6 +30,18 @@ function Attendance() {
   const [presentInRange, setPresentInRange] = useState([]);
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+  const [tempUser, setTempUser] = useState(null);
+
+  useEffect(() => {
+    Axios({
+      method: "POST",
+      withCredentials: true,
+      params: { id: user?._id },
+      url: "https://shrouded-badlands-75056.herokuapp.com/employees/query",
+    })
+      .then((res) => setTempUser(res.data))
+      .catch((e) => alert(e.message));
+  }, []);
 
   const selectionRange = {
     startDate: startDate,
@@ -44,10 +56,10 @@ function Attendance() {
 
   const handleAttendance = () => {
     Axios({
-      method: "GET",
+      method: "POST",
       withCredentials: true,
       data: { username: user?.username },
-      url: "https://shrouded-badlands-75056.herokuapp.com/query",
+      url: "https://shrouded-badlands-75056.herokuapp.com/employees/query",
     })
       .then((res) => {
         const st = new Date(startDate);
@@ -82,7 +94,7 @@ function Attendance() {
     const d1 = new Date(date);
     const d2 = new Date();
     let repeat = false;
-    user.presentOn.every((d) => {
+    tempUser.presentOn.every((d) => {
       const t = new Date(d);
       if (
         t.getDate() == d2.getDate() &&
