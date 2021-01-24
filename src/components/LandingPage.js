@@ -74,6 +74,7 @@ function LandingPage() {
           JSON.stringify({
             username: res.data.username,
             isAdmin: res.data.isAdmin,
+            _id: res.data._id,
           })
         ); //////////////////added 1
         dispatch({

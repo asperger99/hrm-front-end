@@ -46,13 +46,14 @@ function Attendance() {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "https://shrouded-badlands-75056.herokuapp.com/user",
+      data: { username: user?.username },
+      url: "https://shrouded-badlands-75056.herokuapp.com/query",
     })
       .then((res) => {
         const st = new Date(startDate);
         const ed = new Date(endDate);
         const d2 = new Date();
-        const temp = res.data.presentOn?.filter((d) => {
+        const temp = res.data[0].presentOn?.filter((d) => {
           const t = new Date(d);
           if (
             t.getDate() == ed.getDate() &&
